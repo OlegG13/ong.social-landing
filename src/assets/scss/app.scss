@@ -1,0 +1,30 @@
+// ==========================================================================
+// Main file to connect albums structural pieces
+// ==========================================================================
+@import 'settings';
+@import 'foundation';
+
+@include foundation-global-styles;
+
+// Settings
+@import '_settings/color';
+@import '_settings/typography';
+@import '_settings/layout';
+
+// Tools
+@import '_tools/mixins';
+// @import '_tools/healthchecks'; // only in dev
+
+// Generic
+@import '_generic/reset';
+@import '_generic/base';
+@import '_generic/layout';
+
+// Objects
+@import '_objects/flex';
+
+//components
+@import '_components/header';
+@import '_components/nav';
+@import '_components/page';
+@import '_components/sections';

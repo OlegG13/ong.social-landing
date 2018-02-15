@@ -1,0 +1,78 @@
+//
+// Color variables
+// ==========================================================================
+
+// Main colors
+$primary-color: #00ccff;
+$secondary-color: #727171;
+
+$tertiary-color: #888cb1;
+$fourth-color: #5b5d7b;
+
+// Messages colors
+$info-color: #5a5e6a;
+$warning-color: yellow;
+$danger-color: #f34e3C;
+$success-color: #10b683;
+
+// Neutral colors
+$inverse-color: #fff;
+$neutral-color: #f1f2f9;
+
+//
+// color variations
+$primary-dark-color: #16171a;
+$secondary-dark-color: #29283a;
+
+$info-dark-color: #5b5c7c;
+
+$neutral-light-color: #c0c9e4;
+$neutral-dark-color: #d6dbeb;
+$neutral-special-color: #f9f9fc;
+
+$additional-color: #6e718e;
+
+// brand colors
+$facebook-color: #506aa3;
+$linkedin-color: #3091c4;
+$civic-color: #3ea3df;
+
+// SCSS calculator to get one color from another
+// http://razorltd.github.io/sasscolourfunctioncalculator/
+
+
+//
+// Colors for specific elements
+// ==========================================================================
+$color-body-text-secondary: $secondary-color;
+
+// Coins
+$color-g-score: $primary-color;
+$color-g-fuel: $danger-color;
+
+// Links
+$color-link: $secondary-color;
+//$color-link-hover: $accent-color;
+
+// Bg
+$color-bg: $secondary-color;
+$color-neutral-bg: $neutral-color;
+$color-table-stripe: $neutral-special-color;
+$color-bg-head: $neutral-special-color;
+
+// Forms
+$color-text-control: $neutral-color;
+
+$color-toggle-disable-bg: #d5dbec;
+$color-toggle-disable-slide: #6E708F;
+$color-toggle-enable-bg: rgba($success-color, 0.4);
+$color-toggle-enable-slide: $success-color;
+
+// User
+$color-user-placeholder: $neutral-dark-color;
+$color-gravity: $primary-color;
+$color-online-status: $success-color;
+$color-offline-status: $danger-color;
+
+$color-border: $neutral-dark-color;
+$color-dark-border: darken(saturate(adjust-hue($neutral-dark-color, 2), 5.76), 9.02);

@@ -1,0 +1,26 @@
+.progress {
+  position: relative;
+  height: 8px;
+  border-radius: $border-radius-primary;
+  background-color: $neutral-dark-color;
+  overflow: hidden;
+
+  &__bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+.progress--primary {
+  .progress__bar {
+    background-color: $primary-color;
+  }
+}
+
+.progress--danger {
+  .progress__bar {
+    background-color: $danger-color;
+  }
+}

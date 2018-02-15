@@ -1,0 +1,27 @@
+.page {
+  box-sizing: border-box;
+  &__hero {
+    position: relative;
+    padding-bottom: 51%;
+  }
+  &__header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  &__about {
+    padding: 150px 0 0 0;
+  }
+  &__container {
+    max-width: 1160px;
+    padding: 0 15px;
+    margin: 0 auto;
+    &--lg {
+      max-width: 100%;
+      padding: 0 40px;
+    }
+  }
+
+
+}

@@ -1,0 +1,33 @@
+html {
+  font-size: $base-font-size;
+  line-height: 1.5;
+  color: $color-body-text-secondary;
+
+  text-rendering:          optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing:  antialiased;
+
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #fff;
+  font-family: $primary-font;
+}
+
+ul {
+  list-style: none;
+}
+
+.hide {
+  display: none !important;
+}
+
+.text-info {
+  color: $info-color;
+}
+
+.p-0 {
+  padding: 0;
+}

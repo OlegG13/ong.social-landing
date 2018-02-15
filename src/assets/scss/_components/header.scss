@@ -1,0 +1,39 @@
+.header {
+  padding: 50px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  &__nav {
+
+  }
+  &__menu {
+
+  }
+
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  &__player {
+
+  }
+  &__screen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+  }
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 15;
+  left: 150px;
+}

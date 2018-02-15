@@ -1,0 +1,177 @@
+// Buttons
+// ==========================================================================
+/* Base styles */
+.btn {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  padding: 9px;
+  min-width: 108px;
+  border: 1px solid transparent;
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  span {
+    line-height: inherit;
+  }
+  &__title {
+    &--red {
+      color: #F34E3C;
+    }
+  }
+}
+
+/* Modifiers */
+.btn-md {
+  min-width: 158px;
+  min-height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.btn-x-lg {
+  min-width: 206px;
+  font-weight: 700;
+  font-size: 14px;
+  min-height: 40px;
+  padding: 12px 30px;
+}
+
+.btn-lg {
+  min-width: 184px;
+  font-weight: 700;
+  font-size: 14px;
+  min-height: 40px;
+}
+
+.btn-long {
+  min-width: 135px;
+  &--mobile {
+    @media screen and (max-width: $mobile-md) {
+      min-width: 108px;
+    }
+  }
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-sm {
+  min-width: 100px;
+}
+
+.btn-no-width {
+  min-width: auto;
+  padding: 9px 0;
+}
+
+
+// Buttons colors
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: $inverse-color;
+}
+
+.btn-success {
+  background-color: $success-color;
+  border-color: $success-color;
+  color: $inverse-color;
+}
+
+.btn-neutral {
+  background-color: $neutral-color;
+  border-color: $neutral-color;
+  color: $primary-dark-color;
+}
+
+.btn-inverse {
+  background-color: transparent;
+  border-color: $color-dark-border;
+  color: $fourth-color;
+  &[disabled] {
+    background-color: $neutral-color;
+  }
+}
+
+.btn-text {
+  background-color: transparent;
+  border: 0;
+
+  &.btn-primary {
+    color: $primary-color;
+  }
+}
+
+
+// Buttons with border
+.btn-border {
+  background-color: transparent;
+
+  &.btn-primary {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+}
+
+.btn-round {
+  border-radius: 50px;
+}
+
+
+
+.btn-special {
+  border-radius: $border-radius-primary;
+  font-weight: 700;
+  min-height: 44px;
+  padding: 15px 20px;
+}
+
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &--left {
+    justify-content: flex-start;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+  }
+
+  .dropdown__btn {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $mobile-md) {
+    flex-direction: initial;
+
+    button:not(:first-child),
+    .dropdown:not(:first-child) {
+      margin-left: 15px;
+    }
+  }
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn--more {
+  min-width: auto;
+  padding: 9px 0;
+}
+
+.btn-blue {
+  color: #347ffb;
+}

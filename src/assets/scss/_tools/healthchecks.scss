@@ -1,0 +1,42 @@
+//
+// Healthchecks
+// Only uses in development, to check a position of different classes 
+// on the page
+// ==========================================================================
+
+// Outline albums classes.
+[class] {
+  outline: 5px solid lightgrey;
+}
+
+// Outline albums BEM Elements.
+[class*="__"] {
+  outline: 5px solid grey;
+}
+
+// Outline albums BEM Modifiers.
+[class*="--"] {
+  outline: 5px solid darkgrey;
+}
+
+// Outline albums Object classes.
+[class^="o-"],
+[class*=" o-"] {
+  outline: 5px solid orange;
+}
+
+// Outline albums Component classes.
+[class^="c-"],
+[class*=" c-"] {
+  outline: 5px solid cyan;
+}
+
+// Outline albums Responsive classes.
+[class*="@"] {
+  outline: 5px solid rosybrown;
+}
+
+// Outline albums Hack classes.
+[class^="_"] {
+  outline: 5px solid red;
+}

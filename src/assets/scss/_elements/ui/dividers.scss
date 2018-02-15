@@ -1,0 +1,13 @@
+// Dividers
+// ==========================================================================
+.divider {
+  border: 0;
+  outline: 0;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.divider--neutral {
+  background-color: $neutral-dark-color;
+}

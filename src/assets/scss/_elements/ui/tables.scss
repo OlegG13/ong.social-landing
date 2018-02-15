@@ -1,0 +1,55 @@
+// Tables
+// ==========================================================================
+.table-flex {
+  &__head {
+    color: $fourth-color;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  &__body {
+
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 24px;
+  }
+}
+
+.table-flex.table--stripe {
+  .table-flex__body {
+    .table-flex__row:nth-child(odd) {
+      background-color: $color-table-stripe;
+    }
+  }
+}
+
+// Modifications
+// ==========================================================================
+.table--add-fav-coin {
+  margin-top: 12px;
+
+  .table-flex__row {
+    flex-wrap: wrap;
+
+    div:nth-child(1) { width: 100% }
+  }
+
+  .action {
+    justify-content: flex-end;
+  }
+
+  // Responsive Styles
+  @media screen and (min-width: $tablet-md) {
+    .table-flex__row {
+      div:nth-child(1) { width: 28% }
+      div:nth-child(2) { width: 23% }
+      div:nth-child(3) { width: 24% }
+      div:nth-child(4) { width: 15% }
+      div:nth-child(5) { width: 10%; justify-self: flex-end; }
+    }
+  }
+}

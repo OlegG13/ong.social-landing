@@ -1,0 +1,37 @@
+.badge {
+  display: flex;
+
+  &__mark {
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 20px;
+    color: $inverse-color;
+    padding: 3px 8px;
+    display: inline-block;
+  }
+}
+
+.promotion {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__text {
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 7px;
+  }
+}
+
+.promotion--primary {
+  .promotion__text {
+    color: $primary-color;
+  }
+}
+
+.badge--primary {
+  .badge__mark {
+    background-color: $primary-color;
+
+  }
+}
