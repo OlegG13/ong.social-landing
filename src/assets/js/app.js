@@ -108,7 +108,16 @@ if (particlesJS && document.getElementById('particles-js')) {
         jQuery("#bgndVideo").YTPlayer();
     });
 
-    $('#getting-started').countdown('2018/08/01', function(event) {
-        $(this).html(event.strftime('%d days : %H hours : %M min : %S sec'));
+    $('#getting-started').countdown('2018/04/07', function(event) {
+        $(this).html(event.strftime('%w weeks : %d days : %H hours : %M min : %S'));
     });
+
+    $('[data-scroll]').click(function (e){
+      e.preventDefault();
+        var el = '[data-scroll-to="' + this.getAttribute('data-scroll') + '"]';
+        $('html, body').animate({
+            scrollTop: $(el).offset().top
+        }, 600);
+    });
+
 })();
