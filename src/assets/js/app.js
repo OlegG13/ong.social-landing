@@ -22,13 +22,13 @@ if (particlesJS && document.getElementById('particles-js')) {
         }
       },
       "color": {
-        "value": ["#fff", "#fff"]
+        "value": ["#00c3ff", "#00c3ff"]
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#fff"
+          "color": "#000"
         },
       },
       "opacity": {
@@ -40,13 +40,13 @@ if (particlesJS && document.getElementById('particles-js')) {
       "line_linked": {
         "enable": true,
         "distance": 200,
-        "color" : "#fff",
+        "color" : "#252525",
         "opacity": 0.4,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 0.05,
+        "speed": 0.5,
         "direction": "top",
         "random": true,
         "straight": false,
@@ -119,5 +119,28 @@ if (particlesJS && document.getElementById('particles-js')) {
             scrollTop: $(el).offset().top
         }, 600);
     });
+
+    // var controller = new ScrollMagic.Controller();
+
+    // var animationPhotoObj = $('.page__container');
+
+    // var animationHeader = new TimelineMax();
+    // animationHeader.from('.animateUp', 0.5, {y: 100, opacity: 0})
+    //                .to('.animateUp', 0.5, {y: 0, opacity: 1});
+
+    // Array.prototype.forEach.call(animationPhotoObj, function (item, index) {
+    //
+    //     var newAnimationPhotoScene = new ScrollMagic.Scene({
+    //         triggerElement: '.page__container',
+    //         triggerHook: 0,
+    //         offset: 0,
+    //         duration: "100%"
+    //     }).setTween(animationHeader).addTo(controller);
+    //     newAnimationPhotoScene.addIndicators();
+    // });
+
+
+    new WOW().init();
+
 
 })();
